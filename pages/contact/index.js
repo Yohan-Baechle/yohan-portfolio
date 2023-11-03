@@ -12,7 +12,7 @@ import { fadeIn } from '../../variants';
 
 const Contact = () => {
   return (
-    <div className='h-full bg-primary/30'>
+    <div className='h-full bg-primary/0'>
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         {/* text & form */}
         <div className='flex flex-col w-full max-w-[700px]'>
@@ -24,7 +24,7 @@ const Contact = () => {
             exit='hidden'
             className='h2 text-center mb-12'
           >
-            Let's <span className='text-accent'>connect.</span>
+            Me <span className='text-accent'>contacter.</span>
           </motion.h2>
           {/* form */}
           <motion.form
@@ -36,14 +36,14 @@ const Contact = () => {
           >
             {/* input group */}
             <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='name' className='input' />
-              <input type='text' placeholder='email' className='input' />
+              <input type='text' placeholder='Nom' className='input' />
+              <input type='text' placeholder='Email' className='input' />
             </div>
-            <input type='text' placeholder='subject' className='input' />
-            <textarea placeholder='message' className='textarea'></textarea>
-            <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
+            <input type='text' placeholder='Objet' className='input' />
+            <textarea placeholder='Message' className='textarea'></textarea>
+            <button className='btn rounded-full border border-white/90 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
               <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
-                Let's talk
+                Envoyer
               </span>
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
             </button>

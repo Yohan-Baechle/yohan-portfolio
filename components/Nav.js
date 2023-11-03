@@ -6,23 +6,29 @@ import {
   HiRectangleGroup,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
+  HiDocumentArrowDown
 } from 'react-icons/hi2';
 
 // nav data
 export const navData = [
-  { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
+  { name: 'accueil', path: '/', icon: <HiHome /> },
+  { name: 'a propos', path: '/a-propos', icon: <HiUser /> },
   { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  { name: 'réalisations', path: '/realisations', icon: <HiViewColumns /> },
   {
-    name: 'testimonials',
-    path: '/testimonials',
+    name: 'Témoignages',
+    path: '/temoignages',
     icon: <HiChatBubbleBottomCenterText />,
   },
   {
     name: 'contact',
     path: '/contact',
     icon: <HiEnvelope />,
+  },
+  {
+    name: 'Mon CV',
+    path: '/yohan-baechle-cv.pdf',
+    icon: <HiDocumentArrowDown />,
   },
 ];
 
@@ -54,7 +60,7 @@ const Nav = () => {
               {/* tooltip */}
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
                 <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>
-                  <div className='text-[12px] leading-none font-semibold capitalize'>
+                  <div className='text-[12px] leading-none font-semibold capitalize whitespace-nowrap'>
                     {link.name}
                   </div>
                   {/* triangle */}
